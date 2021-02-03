@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Tabs from "./components/Tabs"; 
+import "./App.css";
 
 function App() {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+     <Tabs> 
+       <div label="tab1"> 
+         tab1<em>content</em>! 
+       </div> 
+       <div label="tab2"> 
+         tab2 <em>content</em>! 
+       </div> 
+       <div label="tab3"> 
+        tab3<em>content</em>! 
+       </div> 
+     </Tabs> 
+     <button onClick={this.addTabs}>+</button>
     </div>
   );
 }
